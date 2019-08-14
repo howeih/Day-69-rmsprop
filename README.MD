@@ -8,12 +8,11 @@ Rmsprop is a very clever way to deal with the problem. It uses a moving average 
 <br>
 I have implemented three versions of gradient-based techniques.
 <br>
+
 * gradient descent
-<br>
 * rmsprop
-<br>
 * rmsprop with momentum
-<br>
+
 And I will use them to find an inversion of matrix A. The loss function will be a squared difference between AX and unit matrix I with the corresponding derivative.
 <br>
 ![Alt text](1.png?raw=true)
@@ -23,6 +22,7 @@ Here is the plot of loss function for each method with respect to the number of 
 ![Alt text](rmsprop.png?raw=true)
 <br>
 run:
+
 ```
 fn main() {
     let a = array![
@@ -54,7 +54,8 @@ fn main() {
 
 ```
 result:
-```$xslt
+
+```
 [[0.7887994493417734, -0.013393893555995295, 0.17895029874234003, 0.1860322819946345, -0.08252066058896279],
  [-0.013393893555995073, 0.8016511119690202, 0.004871810807576427, 0.196724184030231, -0.06795410134228565],
  [0.17895029874233992, 0.004871810807576593, 0.8481629460866849, -0.15156070882280903, 0.06786291249848203],
